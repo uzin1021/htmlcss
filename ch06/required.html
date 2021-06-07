@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>레드향 주문하기</title>
+    <style>
+    #shipping{
+            list-style: none;
+            line-height: 2;
+        }
+    label{
+        float: left;
+        width: 80px;
+    }
+    fieldset{
+        margin-bottom: 10px;
+    }
+    input[type="submit"],[type="reset"]{
+        width: 100px;
+        height: 30px;
+        margin: 5px;
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <form action="" method="POST">
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul id="shipping">
+                    <li>
+                        <label for="prod">주문 상품</label>
+                        <input type="text" id="prod" value="상품용 3KG" readonly>
+                    </li>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type="text" id="name" autofocus required>
+                    </li>
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="addr" required>
+                    </li>
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </li>
+                    <li>
+                        <label for="phone">연락처</label>
+                        <input type="tel" id="phone">
+                    </li>
+                    <li>
+                        <label for="date">배송 지정</label>
+                        <input type="date" id="date">
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea cols="40" rows="3" id="memo"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <div>
+                <input type="submit" value="주문">
+                <input type="reset" value="취소">
+
+            </div>
+        </form>
+    </div>
+</body>
+</html>

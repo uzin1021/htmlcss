@@ -1,0 +1,9 @@
+body{ /*스타일 상속*/
+    font-size:  1.2em;  /*1em - 16px*/
+}
+h1{
+    color: orange !important; 
+}
+.redText{
+    color: red;
+}
