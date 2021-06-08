@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        ul {
+            list-style: none; /*불릿 없애기*/
+        }
+        ul li{
+            display: inline; /*수평 정렬*/
+            padding: 10px 15px;
+        }
+        ul li a{
+            text-decoration: none;
+            padding: 5px 20px;
+            color: black;
+        }
+        ul li a[href]{ /*속성 선택자*/
+            background-color: yellow;
+
+        }
+        ul li a:hover, a:focus{ /*가상 선택자 : 마우스 올려놨을때*/
+            background-color: rgb(57, 175, 57);
+        } 
+        ul li a:active{ /*가상 선택자 : 마우스 클릭*/
+            color: red;
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인메뉴 : </a></li>
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+        <li><a href="#">메뉴4</a></li>
+    </ul>
+</body>
+
+</html>
